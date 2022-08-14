@@ -21,6 +21,10 @@ Na tabela Student temos o ID do estudante, o nome, o GPA (Grade Point Average) q
 ![image](https://user-images.githubusercontent.com/98848529/184547927-edf977c3-ca7e-4d71-859a-ad78726cc6d6.png)
 
 ### Tabela College
+Na tabela College temos o nome do College (universidade), o nome, o GPA (Grade Point Average) que é a média geral que o aluno obtém ao longo do high school (equivalente ao ensino médio) e esse valor é utilizado para o ingresso nas faculdades americanas e sizeHS que é o tamanho da escola onde o aluno fez o ensino médio (tamanho em número de estudantes dessa escola). 
+
+![image](https://user-images.githubusercontent.com/98848529/184548220-e3ea8169-4020-45e6-965a-052ed2091515.png)
+
 
 #### Visualização de alguns Dados da Tabela
 
