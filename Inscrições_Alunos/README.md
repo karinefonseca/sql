@@ -32,13 +32,13 @@ Na tabela Aplly temos a relação dos estudantes com as universidades. Temos o I
 
 ### SELECT
 
- 1. **Todos os IDs e nomes dos alunos com GPA > 3.6**
+ **Todos os IDs e nomes dos alunos com GPA > 3.6**
 
-  **SELECT** sID, sName **FROM** Student **WHERE** GPA > 3.6;
+  - **SELECT** sID, sName **FROM** Student **WHERE** GPA > 3.6;
 
 **Nomes dos estudantes e dos cursos para os quais eles se inscreveram**
 
-  **SELECT** sName, major **FROM** Student, Apply **WHERE** Student.sID = Apply.sID;
+  - **SELECT** sName, major **FROM** Student, Apply **WHERE** Student.sID = Apply.sID;
 
 
 
