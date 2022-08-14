@@ -26,6 +26,9 @@ Na tabela College temos o nome do College (universidade), o state (estado aonde 
 ### Tabela Apply
 Na tabela Aplly temos a relação dos estudantes com as universidades. Temos o ID do estudante (sID), o nome da Universidade (cName), o nome do curso superior (major) e a decisão (decision) onde definimos se um estudante foi ou não aceito (Y para sim e N para não).
 
+![image](https://user-images.githubusercontent.com/98848529/184548476-0daf463d-4d9e-458b-a299-72542c6b8f2c.png)
+
+
 
 
 
