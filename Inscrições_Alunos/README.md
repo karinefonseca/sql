@@ -74,6 +74,17 @@ Abaixo algumas consultas realizadas no banco de dados.
 Reescrevendo a seguinte consulta usando JOIN: **SELECT** sName, major **FROM** Student, Apply **WHERE** Student.sID = Apply.sID;  (**Nomes dos estudantes e dos cursos para os quais eles se inscreveram**)
 
   - **SELECT** sName, major **FROM** Student **JOIN** Apply using(sID);
+  
+
+  **Informações das inscrições dos estudantes (nome, ID, nome da faculdade e curso)**
+  
+  /*** Inclui alunos que não se inscreveram em nenhum lugar ***/
+
+**SELECT** sName, sID, cName, major **FROM** Student **left join** Apply using(sID);
+
+/*** Inclui inscrições sem combinar com alunos ***/
+
+**SELECT** sName, sID, cName, major **FROM** Student **right join** Apply;
 
 ## AGREGAÇÃO
 
