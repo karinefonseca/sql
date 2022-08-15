@@ -52,8 +52,15 @@ Na tabela Aplly temos a relação dos estudantes com as universidades. Temos o I
 - **SELECT** sID, sName, GPA, sizeHS, GPA*(sizeHS/1000.0) as scaledGPA **FROM** Student;
 
 
+### Subqueries no WHERE
+
+**Nomes dos alunos que se inscreveram para CS (Computer Science)**
+- **SELECT** sName **FROM** Student **WHERE** sID in (**SELECT** sID **FROM** Apply **WHERE** major = 'CS');
 
 
+**Alunos que não são da menor escola (menor sizeHS)**
+
+**select** sID, sName, sizeHS **FROM** Student S1 **WHERE** exists (**SELECT** * **FROM** Student S2 **WHERE** S2.sizeHS < S1.sizeHS);
 
 
 
