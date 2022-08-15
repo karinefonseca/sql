@@ -8,7 +8,7 @@ Antes de irmos para a análise dos dados presentes na tabela, vamos entender a e
 
 ## Análise dos Dados
 
-Vamos observar, a seguir, alguns dados presentes nas tabelas para nos familiarizarmos com as consultas que serão realizadas. Lembrando que as imagens mostram **apenas parte do banco**. 
+Vamos observar, a seguir, as tabelas presentes no banco de dados.
 
 ### Tabela Student
 
