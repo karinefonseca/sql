@@ -62,7 +62,12 @@ Na tabela Aplly temos a relação dos estudantes com as universidades. Temos o I
 
 **select** sID, sName, sizeHS **FROM** Student S1 **WHERE** exists (**SELECT** * **FROM** Student S2 **WHERE** S2.sizeHS < S1.sizeHS);
 
-## 
+## OPERADORES JOIN
+
+**Nomes e GPAs dos alunos de escolas sizeHS< 1000 que se inscreveram para CS em Stanford**
+
+**SELECT** sName, GPA **FROM** Student **JOIN** Apply using(sID) **WHERE** sizeHS < 1000 and major = 'CS' and cName = 'Stanford';
+
 
 
 
