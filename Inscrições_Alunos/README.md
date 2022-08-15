@@ -125,7 +125,7 @@ Reescrevendo a seguinte consulta usando JOIN: **SELECT** sName, major **FROM** S
 
 **Aceitando todos os inscritos**
 
-- **UPDATE** Apply set decision = 'Y';
+- **UPDATE** Apply **SET** decision = 'Y';
 
 
 
