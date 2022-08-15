@@ -14,5 +14,6 @@ Neste projeto faço diversas consultas à seguinte base de dados utilizando os p
 
 O presente projeto faz parte da lista de exercícios do curso Databases: Relational Databases and SQL da Universidade de Stanford. Aqui temos a seguinte base de dados (imagem abaixo) e temos que responder 8 questões. As perguntas e as respostas (queries) estão descritas no diretório do projeto.
 
-![image](https://user-images.githubusercontent.com/98848529/184564658-7c936bc0-41c2-4354-9100-a926fbc487bc.png)
+![image](https://user-images.githubusercontent.com/98848529/184564830-9110a0cb-ea35-4337-ac34-9835e0e288d6.png)
+
 
