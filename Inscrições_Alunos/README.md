@@ -40,6 +40,21 @@ Na tabela Aplly temos a relação dos estudantes com as universidades. Temos o I
 
   - **SELECT** sName, major **FROM** Student, Apply **WHERE** Student.sID = Apply.sID;
 
+**Nomes e GPAs dos studantes em escolas menores que 1000 (menos de 1000 alunos) que se inscreveram para o curso de Ciência da COmputação (CS) na faculdade de Staford e a decisão.**
+
+- **SELECT** sName, GPA, decision **FROM** Student, Apply **WHERE** Student.sID = Apply.sID and sizeHS < 1000 and major = 'CS' and cname = 'Stanford';
+  
+ **Alunos que se inscreveram em cursos superiores na área de bio** 
+
+- **SELECT** sID, major **FROM** Apply **WHERE** major like '%bio%';
+
+**Adicionando uma escala para o CPA baseado no sizeHS**
+- **SELECT** sID, sName, GPA, sizeHS, GPA*(sizeHS/1000.0) as scaledGPA **FROM** Student;
+
+
+
+
+
 
 
 
