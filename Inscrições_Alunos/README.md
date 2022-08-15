@@ -1,6 +1,6 @@
 # Inscrições de Alunos para Universidades
 
-Neste projeto faço diversas consultas à seguinte base de dados utilizando os principais comandos do SQL: SELECT, DELETE, DROP, INSERT, UPDATE, RIGHT JOIN, LEFT JOIN e INNER JOIN. Bem como os comandos: GROUP BY, ORDER BY, COUNT, MIN, MAX e tratamento de campos NULL.
+Neste projeto faço diversas consultas à seguinte base de dados utilizando os principais comandos do SQL: SELECT, DELETE, INSERT, UPDATE, RIGHT JOIN, LEFT JOIN e INNER JOIN. Bem como os comandos: GROUP BY, ORDER BY, COUNT, MIN, MAX e tratamento de campos NULL.
 
 ![Inscrições de Alunos em Universidades (EDX-Stanford) - Diagrama ER de banco de dados (pé de galinha)](https://user-images.githubusercontent.com/98848529/184547164-6c997c11-1d80-431f-a49a-68dcf93e655c.jpeg)
 
@@ -30,7 +30,7 @@ Na tabela Aplly temos a relação dos estudantes com as universidades. Temos o I
 
 # Consultas (Queries)
 
-Abaixo algumas consultas realizadas no banco de dados
+Abaixo algumas consultas realizadas no banco de dados.
 
 ## SELECT
 
@@ -107,6 +107,25 @@ Reescrevendo a seguinte consulta usando JOIN: **SELECT** sName, major **FROM** S
 **Número de aluno com o GPA não nulo**
 
 - **SELECT** count(*) **FROM** Student **WHERE GPA is not null**;
+
+## INSERT
+
+**Inserindo uma nova Universidade**
+
+- **INSERT INTO** College values ('Carnegie Mellon', 'PA', 11500);
+
+
+## DELETE
+
+ **Deletando as Universidades que não tiveram inscritos para CS**
+
+- **DELETE FROM** College **WHERE** cName not in (select cName from Apply where major = 'CS');
+
+## UPDATE
+
+**Aceitando todos os inscritos**
+
+- **UPDATE** Apply set decision = 'Y';
 
 
 
