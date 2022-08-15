@@ -28,9 +28,9 @@ Na tabela Aplly temos a relação dos estudantes com as universidades. Temos o I
 
 ![image](https://user-images.githubusercontent.com/98848529/184548476-0daf463d-4d9e-458b-a299-72542c6b8f2c.png)
 
-## Consultas (Queries)
+# Consultas (Queries)
 
-### SELECT
+## SELECT
 
  **Todos os IDs e nomes dos alunos com GPA > 3.6**
 
@@ -52,7 +52,7 @@ Na tabela Aplly temos a relação dos estudantes com as universidades. Temos o I
 - **SELECT** sID, sName, GPA, sizeHS, GPA*(sizeHS/1000.0) as scaledGPA **FROM** Student;
 
 
-### Subqueries no WHERE
+## Subqueries no WHERE
 
 **Nomes dos alunos que se inscreveram para CS (Computer Science)**
 - **SELECT** sName **FROM** Student **WHERE** sID in (**SELECT** sID **FROM** Apply **WHERE** major = 'CS');
@@ -61,6 +61,8 @@ Na tabela Aplly temos a relação dos estudantes com as universidades. Temos o I
 **Alunos que não são da menor escola (menor sizeHS)**
 
 **select** sID, sName, sizeHS **FROM** Student S1 **WHERE** exists (**SELECT** * **FROM** Student S2 **WHERE** S2.sizeHS < S1.sizeHS);
+
+## 
 
 
 
